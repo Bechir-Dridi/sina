@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%
+}
+
+.app {
+    min-height: 100vh;
+}
+
+/* Header.js -----------------------------------------begin*/
+.Header {
+    min-height: 10vh;
+    background: rgba(66, 207, 58, 0.669);
+    box-shadow: 3px 3px 5px grey;
+}
+
+.Header>.head {
+    display: flex;
+}
+
+.Header>.head>.logo {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.Header>.head>.logo>img {
+    margin: .5rem 0rem 0rem .5rem;
+    width: 100px;
+    height: 100px;
+    border-radius: 1rem;
+}
+
+.Header>.head>.logo>h1 {
+    color: white;
+    font-size: 6rem;
+    text-decoration: underline;
+    margin-left: 1rem;
+}
+
+.Header>.head>.contact>p>span:nth-child(2) {
+    margin-left: 1rem;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.Header>.slogan-container {
+    display: flex;
+    justify-content: center;
+}
+
+.Header>.slogan-container>span {
+    color: white;
+    font-size: 3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: oblique;
+}
+
+/* ---------------Nav.js----------------begin */
+
+
+.nav-container>nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-container>nav>.link>a {
+    color: white;
+    font-size: 3rem;
+    margin: 1rem;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    position: relative;
+    opacity: 0.9;
+}
+
+.nav-container>nav>.link>a:focus {
+    opacity: 1;
+    color: rgba(66, 207, 58, 0.669);
+    background: white;
+    border-radius: .5rem;
+}
+
+.nav-container>.btn {
+    display: none;
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+    color: white;
+    font-size: 2rem;
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .nav-container>.btn {
+        display: block;
+
+    }
+
+    .close {
+        display: none;
+    }
+
+    .open {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+}
+
+/* ---------------Nav.js----------------end */
+/* Header.js -----------------------------------------begin*/
+
+/* ---------------Accueil----------------begin */
+div .partners .slider-container {
+    margin: 0rem 2rem;
+    border: 2px solid green;
+    border-radius: 1rem;
+    box-shadow: 3px 3px 5px grey;
+    display: flex;
+    justify-content: center;
+}
+
+div .partners .slider {
+    width: 50%;
+}
+
+div .partners .title-container {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+div .partners .title-container h1 {
+    background: rgba(66, 207, 58, 0.669);
+    box-shadow: 3px 3px 5px grey;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, sans serif;
+}
+
+/* ---------------StoreSlider.js----------------begin */
+.carousel {
+    display: flex;
+    justify-content: center;
+
+}
+
+.carousel .slide {
+    height: 80vh;
+    background-color: black;
+}
+
+.carousel .slide img {
+    max-height: 100%;
+    width: auto;
+}
+
+.sina-image {
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .carousel {
+        height: 70vh;
+
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .carousel {
+        height: 60vh;
+
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .carousel {
+        height: 50vh;
+
+    }
+}
+
+/* ---------------StoreSlider.js----------------end */
+/* ---------------Accueil----------------------------------end */
+
+/* ---------------Products----------------------------------begin */
+/* ---------------Product.js---------------begin */
+.product-container {
+    display: flex;
+    margin: 2rem;
+    background: rgba(213, 247, 211, 0.669);
+    border-radius: 1rem;
+    box-shadow: 3px 3px 5px grey;
+}
+
+.product-container img {
+    width: 15%;
+}
+
+.product-container p {
+    margin: 1rem;
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    word-break: break-all;
+    white-space: pre-wrap;
+    color: rgb(101, 98, 98);
+}
+
+/* ---------------Product.js---------------end */
+
+
+/* ---------------Conseils----------------------------------begin */
+/* ---------------Conseil.js---------------begin */
+.conseil-container {
+    margin: 2rem;
+    background: rgba(213, 247, 211, 0.669);
+    border-radius: 1rem;
+    box-shadow: 3px 3px 5px grey;
+}
+
+.conseil-container .conseil-imgs {
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.conseil-container .conseil-imgs img {
+    height: 40vh;
+    margin: 1rem;
+    border-radius: .5rem;
+}
+
+.conseil-container p {
+    margin: 1rem 0rem 0rem 1rem;
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    /* word-break: break-all; */
+    white-space: pre-wrap;
+    color: rgb(101, 98, 98);
+}
+
+/* ---------------Conseil.js---------------end */
+/* ---------------Conseils----------------------------------begin */
